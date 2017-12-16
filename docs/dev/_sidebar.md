@@ -1,0 +1,10 @@
+- [Development documentation](dev/)
+  - [Cheat sheet](dev/cheat_sheet)
+  - [Infrastructure](dev/infra)
+  - [Local setup](dev/local_setup)
+  - [Maintainers](dev/maintainers)
+  - [Project structure](dev/structure)
+  - [Tools](dev/tools)
+  - [Useful links](dev/links)
+  - [Projects documentation](dev/projects/)
+    <!-- generator:projects -->
