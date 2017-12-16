@@ -26,8 +26,12 @@ Here's what this boilerplate provides to your project:
 
 ## Documentation
 
-- [Project structure](/dev/structure)
-- [Tools](/dev/tools)
+You can visit the documentation [here](https://antarestupin.github.io/project-boilerplate). There's not much to see as it's an empty documentation for your project, but it shows what you get out of the box.
+
+If you want to know more about the structure of this boilerplate and the tools it provides, the following may help you:
+
+- [Project structure](https://antarestupin.github.io/project-boilerplate/#/dev/structure)
+- [Tools](https://antarestupin.github.io/project-boilerplate/#/dev/tools)
 
 ## How to use
 
@@ -43,7 +47,7 @@ Then install Node dependencies:
 npm install
 ```
 
-And that's it. You can then run the docs server with `make run-docs` and follow the [instructions](http://localhost/3000) to install missing dependencies if needed.
+And that's it. You can then run the docs server with `make run-docs` and follow the [instructions](http://localhost:3000) to install missing dependencies if needed.
 
 You can also remove the section that describes this project in this README and uncomment the hidden section specific to your project (comments are there to help).
 
