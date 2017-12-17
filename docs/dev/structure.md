@@ -11,11 +11,15 @@ The structure of this project is based on [Project Boilerplate](https://github.c
 - `/src`:    App implementation code
 - `/tools`:  Resources for tools that can be use when working on the project
 
+The main commands are defined in the root `Makefile`.
+
 ## /assets
 
 > Not done yet
 
 ## /docs
+
+> If you feel some parts of documentation are "too much" right now but may be useful someday with a bigger team on the project you can simply comment links to them in `_sidebar.md` and `_navbar.md` files to hide them.
 
 - `design`:         Design-related documentation
 - `dev`:            Development-related documentation
@@ -25,6 +29,7 @@ The structure of this project is based on [Project Boilerplate](https://github.c
   - `stories`:      Description and sequence diagrams of domain stories
 - `runbook`:        Runbook; ops-oriented collection of processes to maintain the project
 - `**/_sidebar.md`: Template of the left menu
+- `**/_navbar.md`:  Template of the top menu
 
 ## /infra
 

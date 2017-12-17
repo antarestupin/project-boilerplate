@@ -52,3 +52,7 @@ run-docs:
 # Run plop generator
 generate:
 	./node_modules/.bin/plop --plopfile tools/generators/plopfile.js
+
+# Install everything needed to have a local development environment for Mac OS
+local-setup-mac:
+	./tools/setup/mac.sh

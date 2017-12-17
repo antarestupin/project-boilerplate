@@ -49,7 +49,7 @@ npm install
 
 And that's it. You can then run the docs server with `make run-docs` and follow the [instructions](http://localhost:3000) to install missing dependencies if needed.
 
-You can also remove the section that describes this project in this README and uncomment the hidden section specific to your project (comments are there to help).
+You can also remove the section that describes this project in this README and uncomment the hidden section specific to your project (comments are there to help), and remove the `.git` directory.
 
 ## License
 
