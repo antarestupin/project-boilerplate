@@ -7,24 +7,53 @@
 #
 
 #===================================================
-#============     BUILDING PIPELINE     ============
+#==============     DEV COMMANDS      ==============
 #===================================================
 
-# Install project dependencies
+# Run a server containing the documentation
+run-docs:
+	./node_modules/.bin/docsify serve ./docs
+
+# Run plop generator
+generate:
+	./node_modules/.bin/plop --plopfile tools/generators/plopfile.js
+
+# List missing system dependencies
+requirements:
+	./tools/setup/requirements.sh
+
+# Install everything needed to have a local development environment for Mac OS
+local-setup-mac:
+	./tools/setup/mac.sh
+
+# Run external services locally
+run-local:
+	echo "Nothing to run"
+
+# Run local environment tools
+run-tools:
+	docker-compose -f src/infra/docker/ci/sonar.yml up -d
+
+
+#===================================================
+#================     CI TESTS     =================
+#===================================================
+
+# Run CI server
+run-ci:
+	echo "Not done yet"
+
+# Install project dependencies for tests
 install-test:
 	echo "Not done yet"
 
-# Build the project
+# Build the project for tests
 build-test:
 	echo "Not done yet"
 
-# Run in dev mode
+# Run in dev mode for tests
 run-test:
 	echo "Not done yet"
-
-#===================================================
-#==================     TESTS     ==================
-#===================================================
 
 # Run unit tests
 unit-tests:
@@ -38,21 +67,3 @@ integration-tests:
 test:
 	make unit-tests
 	make integration-tests
-
-#===================================================
-#=============     CUSTOM COMMANDS     =============
-#===================================================
-
-# Add here custom commands
-
-# Run a server containing the documentation
-run-docs:
-	./node_modules/.bin/docsify serve ./docs
-
-# Run plop generator
-generate:
-	./node_modules/.bin/plop --plopfile tools/generators/plopfile.js
-
-# Install everything needed to have a local development environment for Mac OS
-local-setup-mac:
-	./tools/setup/mac.sh

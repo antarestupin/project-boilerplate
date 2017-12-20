@@ -39,6 +39,7 @@ First clone this repository:
 
 ```bash
 git clone antarestupin/project-boilerplate myproject
+cd myproject
 ```
 
 Then install Node dependencies:
@@ -47,7 +48,7 @@ Then install Node dependencies:
 npm install
 ```
 
-And that's it. You can then run the docs server with `make run-docs` and follow the [instructions](http://localhost:3000) to install missing dependencies if needed.
+And that's it. You can then run the docs server with `make run-docs` and follow the [instructions](http://localhost:3000/dev/local_setup) to install missing dependencies if needed.
 
 You can also remove the section that describes this project in this README and uncomment the hidden section specific to your project (comments are there to help), and remove the `.git` directory.
 
@@ -67,6 +68,8 @@ Follow instructions provided [here](/dev/local_setup) ([offline instructions](do
 ## Documentation
 
 The online documentation is available [here]().
+
+You can run it locally with `npm install && make run-docs`. It will be available at http://127.0.0.1:3000.
 
 ---
 

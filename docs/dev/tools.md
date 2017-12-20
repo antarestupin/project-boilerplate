@@ -29,7 +29,7 @@ make generate
 
 Here are defined generators:
 
-- `docker-compose`: Generates a docker-compose file into `infra/docker` with configuration for one of commonly needed external services; this service can then be started using `docker-compose -f infra/docker/service.yml up -d`. Below are listed the services you can get from this generator.
+- `docker-compose`: Generates a docker-compose file into `src/infra/docker` with configuration for one of commonly needed external services; this service can then be started using `docker-compose -f src/infra/docker/service.yml up -d`. Below are listed the services you can get from this generator.
 - `project-docs`: Generates base documentation into `docs/dev/projects` for given project.
 
 Here is the list of services you can get using the `docker-compose` generator:

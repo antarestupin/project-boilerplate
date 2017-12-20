@@ -17,14 +17,14 @@ module.exports = {
     actions: [
       {
         type: 'add',
-        path: '../../docs/dev/projects/{{snakeCase projectName}}/README.md',
+        path: '../../docs/runbook/projects/{{snakeCase projectName}}/README.md',
         templateFile: 'project-docs/readme.hbs'
       },
       {
         type: 'modify',
-        path: '../../docs/dev/_sidebar.md',
+        path: '../../docs/runbook/_sidebar.md',
         pattern: '<!-- generator:projects -->',
-        template: '- [{{ sentenceCase projectName }}](dev/projects/{{ snakeCase projectName }}/)\n    <!-- generator:projects -->'
+        template: '- [{{ sentenceCase projectName }}](runbook/projects/{{ snakeCase projectName }}/)\n    <!-- generator:projects -->'
       }
     ]
 }

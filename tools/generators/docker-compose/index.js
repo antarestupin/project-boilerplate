@@ -20,7 +20,7 @@ module.exports = {
       {
         type: 'input',
         name: 'path',
-        message: 'Destination path, from /infra/docker/',
+        message: 'Destination path, from /src/infra/docker/',
         default: '.'
       },
     ],
@@ -28,7 +28,7 @@ module.exports = {
     actions: [
       {
         type: 'add',
-        path: '../../infra/docker/{{ path }}/{{ service }}.yml',
+        path: '../../src/infra/docker/{{ path }}/{{ service }}.yml',
         templateFile: 'docker-compose/services/{{ service }}.yml'
       }
     ]
