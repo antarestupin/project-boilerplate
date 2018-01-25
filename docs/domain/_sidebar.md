@@ -2,3 +2,4 @@
   - [Entities](domain/entities/)
   - [Domain stories](domain/stories/)
     - [Example story](domain/stories/example)
+  - [Terminology](domain/terminology/)

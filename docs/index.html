@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Documentation</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
   <link rel="stylesheet" href="//unpkg.com/docsify-copy-code/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta/katex.min.css" integrity="sha384-L/SNYu0HM7XECWBeshTGLluQO9uVI1tvkCtunuoUbCHHoTH76cDyXty69Bb9I0qZ" crossorigin="anonymous">
 </head>
 <body>
   <div id="app"></div>
   <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script src="//unpkg.com/docsify-copy-code/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta/katex.min.js" integrity="sha384-ad+n9lzhJjYgO67lARKETJH6WuQVDDlRfj81AJJSswMyMkXTD49wBj5EP004WOY6" crossorigin="anonymous"></script>
   <script>
     mermaid.initialize({ startOnLoad: false })
 
@@ -24,14 +26,21 @@
       loadNavbar: true,
       subMaxLevel: 2,
       routerMode: 'hash',
+      search: {
+        paths: 'auto'
+      },
       markdown: {
         renderer: {
           code: function(code, lang) {
-            if (lang === "mermaid") {
-              return (
-                '<div class="mermaid">' + mermaid.render(lang, code) + "</div>"
-              )
+            switch (lang) {
+              case "mermaid":
+              case "diagram":
+                return '<div class="mermaid">' + mermaid.render(lang, code) + "</div>"
+              case "math":
+              case "katex":
+                return katex.renderToString(code)
             }
+
             return this.origin.code.apply(this, arguments)
           }
         }

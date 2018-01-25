@@ -14,7 +14,7 @@ Here's what this boilerplate provides to your project:
 - A complete documentation with [Docsify](https://docsify.js.org):
   - Pages commonly needed by developers (local environment setup, tools doc…)
   - Domain documentation enhanced with [Mermaid](https://mermaidjs.github.io/)'s sequence diagrams
-  - **[TODO]** Runbook for maintenance and events management
+  - Runbook for maintenance and events management
   - **[TODO]** Base setup for building a design system
 - An advanced development environment:
   - External dependencies management with [Docker Compose](https://docs.docker.com/compose/) and an optional [Vagrant](https://www.vagrantup.com/) VM
@@ -51,6 +51,15 @@ npm install
 And that's it. You can then run the docs server with `make run-docs` and follow the [instructions](http://localhost:3000/dev/local_setup) to install missing dependencies if needed.
 
 You can also remove the section that describes this project in this README and uncomment the hidden section specific to your project (comments are there to help), and remove the `.git` directory.
+
+## Todo
+
+- Documentation
+  - Design documentation
+- Testing base
+  - Integration tests
+  - Performance tests
+- Use packaged docsify lib & plugins to avoid docs leak in case the CDN gets hacked
 
 ## License
 

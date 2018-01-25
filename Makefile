@@ -28,7 +28,7 @@ local-setup-mac:
 
 # Run external services locally
 run-local:
-	echo "Nothing to run"
+	@echo "Nothing to run"
 
 # Run local environment tools
 run-tools:
@@ -41,27 +41,27 @@ run-tools:
 
 # Run CI server
 run-ci:
-	echo "Not done yet"
+	@echo "Not done yet"
 
 # Install project dependencies for tests
 install-test:
-	echo "Not done yet"
+	@echo "Not done yet"
 
 # Build the project for tests
 build-test:
-	echo "Not done yet"
+	@echo "Not done yet"
 
 # Run in dev mode for tests
 run-test:
-	echo "Not done yet"
+	@echo "Not done yet"
 
 # Run unit tests
 unit-tests:
-	echo "No unit tests yet"
+	@echo "No unit tests yet"
 
 # Run integration tests
 integration-tests:
-	echo "No integration tests yet"
+	@echo "No integration tests yet"
 
 # Run all tests (unit + integration tests)
 test:
