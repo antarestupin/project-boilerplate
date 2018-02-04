@@ -30,10 +30,16 @@ local-setup-mac:
 run-local:
 	@echo "Nothing to run"
 
+stop-local:
+	@echo "Nothing to stop"
+
 # Run local environment tools
 run-tools:
 	docker-compose -f src/infra/docker/ci/sonar.yml up -d
 
+# Stop local tools
+stop-tools:
+	docker-compose -f src/infra/docker/ci/sonar.yml down
 
 #===================================================
 #================     CI TESTS     =================

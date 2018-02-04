@@ -1,0 +1,17 @@
+{
+  "name": "project-boilerplate-doc",
+  "version": "0.0.1",
+  "description": "Documentation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {},
+  "dependencies": {
+    "docsify": "^4.5.7",
+    "katex": "^0.9.0-beta1",
+    "mermaid": "^7.1.2"
+  }
+}

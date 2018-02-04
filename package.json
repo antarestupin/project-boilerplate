@@ -12,7 +12,7 @@
   "author": "Antarès Tupin",
   "license": "MIT",
   "devDependencies": {
-    "docsify-cli": "^4.1.12",
+    "docsify-cli": "^4.2.0",
     "plop": "^1.9.0"
   }
 }

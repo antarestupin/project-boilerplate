@@ -59,7 +59,8 @@ You can also remove the section that describes this project in this README and u
 - Testing base
   - Integration tests
   - Performance tests
-- Use packaged docsify lib & plugins to avoid docs leak in case the CDN gets hacked
+- DB filler / data faker
+- Infra
 
 ## License
 
