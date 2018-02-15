@@ -17,7 +17,6 @@ Notes:
 - The docs structure is described [here](dev/structure#docs)
 - [Mermaid](https://mermaidjs.github.io/) is activated, so you can generate graphs using code blocks marked with `mermaid` as language. It's for example useful for [Domain stories](domain/stories/)
 - Emojis are supported :tada:
-- The click-to-copy plugin is activated for code blocks, try to take advantage of it in runbook, cheat sheet…
 - You can also write mathematical stuff using [KaTeX](https://khan.github.io/KaTeX/) in code blocks with the `math` or `katex` language. For example the following:
 
 ```

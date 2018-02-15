@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
     sonar:
         image: sonarqube:6.5-alpine

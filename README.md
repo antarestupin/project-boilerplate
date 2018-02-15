@@ -21,8 +21,8 @@ Here's what this boilerplate provides to your project:
   - Code generation with [Plop](https://plopjs.com/)
   - Code quality analysis with [Sonar](https://www.sonarqube.org/)
 - **[TODO]** A base for testing:
-  - Integration tests with [Cucumber](https://cucumber.io/)
-  - Performance tests with [Gatling](https://gatling.io)
+  - e2e tests with [Cucumber](https://cucumber.io/)
+  - Performance tests with [Locust](https://locust.io/)
 
 ## Documentation
 
@@ -57,10 +57,21 @@ You can also remove the section that describes this project in this README and u
 - Documentation
   - Design documentation
 - Testing base
-  - Integration tests
-  - Performance tests
+  - e2e tests
+  - Performance tests w/ Locust
 - DB filler / data faker
-- Infra
+- Docker Compose configuration base
+- Base infrastructure
+  - Load Balancer / API Gateway
+  <!-- - Service Registry -->
+  <!-- - Monitoring -->
+  - UAA server (Keycloak, Jhipster UAA)
+  <!-- - Configuration server (Spring Cloud Config) -->
+- CI/CD pipeline w/ Jenkins
+  - Spinnaker?
+  - Dependencies check w/ [Dependency check](https://www.owasp.org/index.php/OWASP_Dependency_Check) or [OSSIndex](https://ossindex.net/)
+- Design library base
+  - Use [Storybook](https://github.com/storybooks/storybook)
 
 ## License
 
